@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <span class="highlight"><br>random password</span></h1> 
+        <p>Never use an insecure password again.</p>
+        <button id="generateButton" onclick="generateAllPasswords()">Generate passwords</button>
+        <hr>
+        <div class="password-fields">
+            <div class="password-container">
+                <input type="text" id="passwordField1" placeholder="Your password" disabled>
+                <button class="copy-btn" onclick="copyToClipboard(document.getElementById('passwordField1').value)">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+            <div class ="password-container"> 
+                <input type="text" id="passwordField2" placeholder="Your password" disabled>
+                <button class="copy-btn" onclick="copyToClipboard(document.getElementById('passwordField2').value)">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+        </div> 
+    </div>
+<script src="index.js"></script>   
+</body>
+</html>
